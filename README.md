@@ -66,6 +66,12 @@ Deverá atender os requisitos abaixo para todas categorias de candidatos: Presid
 ## Prazo
 *  O prazo para criar pull requests é até o dia 01/10/2018, às 12h.
 
+[Duvidas com Git e GitHub](https://tableless.com.br/tudo-que-voce-queria-saber-sobre-git-e-github-mas-tinha-vergonha-de-perguntar/)
+
+[Duvidas em como fazer um Fork](https://github.com/UNIVALI-LITE/Portugol-Studio/wiki/Fazendo-um-Fork-do-reposit%C3%B3rio)
+  
+[Duvidas em como fazer um Pull Request](https://blog.da2k.com.br/2015/02/04/git-e-github-do-clone-ao-pull-request/)  
+
 ### Dê o seu melhor!
 ### Boa prova! 
 ### Qualquer dúvida não hesite em perguntar.
