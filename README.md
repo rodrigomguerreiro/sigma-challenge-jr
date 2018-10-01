@@ -1,77 +1,42 @@
-# Processo Seletivo Frontend Junior da Sigma/TJMT
-Bem-vindo ao processo seletivo para desenvolvedor Frontend Junior do TJMT/Sigma!
+# Processo Seletivo Frontend Junior da Sigma/TJMT!
 
-## O Desafio - Projeto Democraticamente
-
-Crie uma aplicação Web utilizando a API do TSE (Tribunal Superior Eleitoral) como fonte de dados.
-
-## Endpoints:
-#### [Presidente](http://divulgacandcontas.tse.jus.br/divulga/rest/v1/candidatura/listar/2018/BR/2022802018/1/candidatos)
-#### [Governador](http://divulgacandcontas.tse.jus.br/divulga/rest/v1/candidatura/listar/2018/MT/2022802018/3/candidatos)
-#### [Senador](http://divulgacandcontas.tse.jus.br/divulga/rest/v1/candidatura/listar/2018/MT/2022802018/5/candidatos)
-#### [Deputado Federal](http://divulgacandcontas.tse.jus.br/divulga/rest/v1/candidatura/listar/2018/MT/2022802018/6/candidatos)
-#### [Deputado Estadual](http://divulgacandcontas.tse.jus.br/divulga/rest/v1/candidatura/listar/2018/MT/2022802018/7/candidatos)
-http://divulgacandcontas.tse.jus.br/divulga/rest/v1/candidatura/buscar/2018/BR/2022802018/candidato/${id_candidato} // URL de detalhes dos candidatos a presidência.
-
-http://divulgacandcontas.tse.jus.br/divulga/rest/v1/candidatura/buscar/2018/MT/2022802018/candidato/${id_candidato} // URL de detalhes das outras classes de candidatos
-
-### Para visualizar o resultado das API's, vocês poder usar:
-##### [JSON Formatter](https://jsonformatter.curiousconcept.com/)
-##### [JSON Formatter-Chrome extension](https://chrome.google.com/webstore/detail/json-formatter/bcjindcccaagfpapjjmafapmmgkkhgoa?hl=pt-BR)
-##### [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools/?hl=pt-br)
-##### [Postman | API Development Environment](https://www.getpostman.com/)
+Esta aplicação foi desenvolvida utilizando a API do TSE (Tribunal Superior Eleitoral) como fonte de dados.
 
 
-## Requisitos
-Deverá atender os requisitos abaixo para todas categorias de candidatos: Presidente/Governador/Senador/Deputado Federal/Deputado Estadual
-### Obrigatório
-* Página para Listagem dos candidatos
-* Página para visualização dos detalhes do candidato
-    * Foto
-    * Nome
-    * Cargo
-    * Candidatura (Deferida/Indeferida)
-    * Partido
-    * Número do Candidato
-    * Vices Candidatos
+# Ferramentas
 
-### Observações/Dicas
+Foi utilizado a biblioteca [ReactJS ](https://reactjs.org/) e o conjunto UI Kit [Tabler](https://tabler.github.io/) . Com o objetivo de maximizar a produtividade e otimizar tempo no desenvolvimento, a aplicação utiliza o gerenciador de dependências Yanr, o projeto  foi criado utilizando o comando : 
+ - npx create-react-app my-app
+ 
 
-* Não limite-se às funcionalidades acima. Qualquer outra feature extra (e não obrigatória) é bem-vinda. Por exemplo:
-    * Campo de pesquisa por nome na páginas de listagem
-    * Campo de pesquisa por estado do candidato
-    * Criar uma lista para salvar seus candidatos (Pode ser memória ou cache), se persistir é melhor ainda
-    
-* O layout é por sua conta.
-* A arquitetura é por sua conta.
-* Qualquer framework SPA (Vue.js, React ou Angular) é permitido
-* Usar javascript puro é permitido
-* Usar CSS puro é permitido
-* Usar qualquer pré-processador (LESS ou SASS) é permitido
-* Não se esqueça da otimização da velocidade da aplicação e da experiência do usuário.
+# Funcionalidades
 
-## Critérios de avaliação
-
-* Usabilidade
-* Criatividade
-* Código limpo e organizado
-* Documentação do projeto (readme)
+De forma simples, a navegação e feita através do menu contendo os tipos de candidatos onde cada tipo representa uma respectiva rota e componente. 
+-   Home rota = '/'
+-   Tipos de candidatos(Presidente, Governador, Senador, Deputado Federal, Deputado Estadual) apresentam uma listagem e invocam o componente com os detalhes de cada tipo de candidato.
 
 
-## Procedimento
+## API TSE
 
-* Faça um fork do projeto 
-* Ao finalizar a sua aplicação, crie um pull request no projeto de origem.
+Api TSE neste caso, inviabilizou a construção de uma listagem com foto dos candidatos, ou seja,  para não deixar a aplicação pesada e realizando muitas requisições optei por manter da forma mais simplificada.
 
-## Prazo
-*  O prazo para criar pull requests é até o dia 01/10/2018, às 12h.
 
-[Duvidas com Git e GitHub](https://tableless.com.br/tudo-que-voce-queria-saber-sobre-git-e-github-mas-tinha-vergonha-de-perguntar/)
+## A aplicação 'Democraticamente'
+Esta aplicação está com as funcionalidades mais simples, ocorrerão atualizações e incrementos futuros.
 
-[Duvidas em como fazer um Fork](https://github.com/UNIVALI-LITE/Portugol-Studio/wiki/Fazendo-um-Fork-do-reposit%C3%B3rio)
-  
-[Duvidas em como fazer um Pull Request](https://blog.da2k.com.br/2015/02/04/git-e-github-do-clone-ao-pull-request/)  
+## Dependências
+Esta aplicação está com as funcionalidades mais simples, ocorrerão atualizações e incrementos futuros.
 
-### Dê o seu melhor!
-### Boa prova! 
-### Qualquer dúvida não hesite em perguntar.
+- "react": "^16.5.2",
+- "react-c3js": "^0.1.20",
+- "react-dom": "^16.5.2",
+- "react-router-dom": "^4.3.1",
+- "react-scripts": "1.1.5",
+ - "tabler-react": "^1.19.1"
+ 
+## Instalação
+```
+> git clone https://github.com/rodrigomguerreiro/sigma-challenge-jr.git
+> cd < diretório do projeto >
+> yarn install
+> yarn start
